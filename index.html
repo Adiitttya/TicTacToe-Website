@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="styles.css">
+
+      <title>TicTacToe</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+        <nav class="nav container">
+          <a href="#" class="nav__logo">
+            <img src="logo.png" alt="image"> Adt Arcade
+          </a>
+          
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li>
+                <a class="nav__link" href="#home">TicTacToe</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== GAME ====================-->
+         <section class="game section" id="blackjack">
+           <div class="tictactoe">
+             <div class="player player-x player-active"
+             id="xPlayerDisplay"
+             onclick="choosePlayer('X')">
+             X
+             </div>
+             <h3 id="titleHeader">Choose</h3>
+             <div class="player player-o"
+             id="oPlayerDisplay"
+             onclick="choosePlayer('O')">
+             O
+             </div>
+           </div>
+        
+           <div id="board">
+             <div class="cell"></div>
+             <div class="cell"></div>
+             <div class="cell"></div>
+             <div class="cell"></div>
+             <div class="cell"></div>
+             <div class="cell"></div>
+             <div class="cell"></div>
+             <div class="cell"></div>
+             <div class="cell"></div>
+           </div>
+           
+           <button class="button" id="restartBtn">
+             Restart
+           </button>
+         </div>
+         
+      <!--==================== FOOTER ====================-->
+      <footer class="footer" id="footer">
+        <p class="footer__text">&#169; <a class="footer__highlight" href="https://instagram.com/_adt.m">Adit</a> All rights reserved</p>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src=""></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src=""></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="script.js"></script>
+   </body>
+</html>
